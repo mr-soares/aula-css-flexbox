@@ -1,15 +1,15 @@
 * {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 .container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 900px;
-    /*background-color: brown;
-     border: 2px solid brown; */
+    height: 100vh; 
 }
 
 ul {
@@ -20,22 +20,22 @@ ul {
 }
 
 a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .logo a, .main-nav a {
-	color: #34495e;
-	font-size: large;
+    color: #34495e;
+    font-size: large;
 }
 
 .logo a,
 .main-nav a {
-	padding: 10px 15px;
-	text-transform: uppercase;
+    padding: 10px 15px;
+    text-transform: uppercase;
 }
 
 .main-nav a:hover {
-	color: #718daa;
+    color: #718daa;
 }
 
 #navbar {
@@ -46,29 +46,74 @@ a {
     height: 5%;
     width: 100%;
     background-color: white;
-    border: 2px solid rgb(147, 200, 160);
 }
 
 #content {
     display: flex;
     height: 70%;
     width: 100%;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
 }
 
 #footer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    text-align: center; 
     height: 25%;
     width: 100%;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+#botaopedir {
+    background-color: black;
+    border-radius: 10px;
+    padding: 20px 20px;
+    color: white;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+#suportelink {
+    color: black;
+    margin-bottom: 10px; 
 }
 
 aside {
     height: 100%;
     width: 20%;
-    background-color: aquamarine;
+    background-color: rgb(255, 255, 255);
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
 
 main {
     width: 60%;
-    background-color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+}
+
+#footer p {
+    max-width: 80%;
+    margin-bottom: 15px; 
 }
